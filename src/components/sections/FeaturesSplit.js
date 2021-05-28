@@ -15,7 +15,7 @@ const defaultProps = {
 
 class FeaturesSplit extends React.Component {
   componentDidMount() {
-    initTableau();
+    this.initTableau();
   }
 
   initTableau = () => {
