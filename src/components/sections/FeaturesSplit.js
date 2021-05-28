@@ -76,17 +76,18 @@ const FeaturesSplit = ({
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   </p>
               </div>
-              <div className={
+              {/* <div className={
                 classNames(
                   'split-item-image center-content-mobile reveal-from-bottom',
                   imageFill && 'split-item-image-fill'
                 )}
-                data-reveal-container=".split-item">
+                data-reveal-container=".split-item"> */}
                 {/* <Image
                   src={require('./../../assets/images/features-split-image-01.png')}
                   alt="Features split 01"
                   width={528}
                   height={396} /> */}
+                <div>
                   <script 
                     type='text/javascript' 
                     src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/viz_v1.js'>
