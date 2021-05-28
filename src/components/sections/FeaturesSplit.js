@@ -87,7 +87,32 @@ const FeaturesSplit = ({
                   alt="Features split 01"
                   width={528}
                   height={396} /> */}
-                  <script type='text/javascript' src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1440px; height: 910px;'><object class='tableauViz' width='1440' height='910' style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-apnortheast-a.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;xayddx' /><param name='name' value='Storyboard2&#47;Q2' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='display_count' value='n' /><param name='origin' value='viz_share_link' /><param name='showAppBanner' value='false' /></object></div>
+                  <script 
+                    type='text/javascript' 
+                    src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/viz_v1.js'>
+                  </script>
+                  <div 
+                    class='tableauPlaceholder' 
+                    style={{
+                      width: '1440',
+                      height: '910'
+                    }}
+                  >
+                    <object 
+                      class='tableauViz' 
+                      style={{
+                        display:`none`,
+                        width: '1440',
+                        height: '910'
+                      }}
+                    >
+                      <param 
+                        name='host_url' 
+                        value='https%3A%2F%2Fprod-apnortheast-a.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;xayddx' /><param name='name' value='Storyboard2&#47;Q2' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='display_count' value='n' /><param name='origin' value='viz_share_link' 
+                      />
+                      <param name='showAppBanner' value='false' />
+                    </object>
+                  </div>
               </div>
             </div>
 
