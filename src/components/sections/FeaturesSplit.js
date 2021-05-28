@@ -3,7 +3,7 @@ import React from 'react';
 import { SectionSplitProps } from '../../utils/SectionProps';
 // import SectionHeader from './partials/SectionHeader';
 // import Image from '../elements/Image';
-// import tableau from 'tableau-api';
+import tableau from 'tableau-api';
 
 const propTypes = {
   ...SectionSplitProps.types
