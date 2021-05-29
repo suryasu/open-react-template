@@ -44,7 +44,7 @@ const Testimonial = ({
   );
 
   const sectionHeader = {
-    title: 'Customer testimonials',
+    title: 'The impact of COVID-19',
     paragraph: 'COVID-19 did not only impact the health of US citizens, but it also impacted a lot of the businesses including restaurants. So, let’s shed some light on impact of this by exploring what can make a restaurant successful and how we can help our local community restaurant owners.'
   };
 
