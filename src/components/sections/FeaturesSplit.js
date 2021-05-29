@@ -28,16 +28,28 @@ class FeaturesSplit extends React.Component {
   }
 
   render() {
+    const outerClasses = classNames(
+      'features-split section',
+      topOuterDivider && 'has-top-divider',
+      bottomOuterDivider && 'has-bottom-divider',
+      hasBgColor && 'has-bg-color',
+      invertColor && 'invert-color',
+      className
+    );
     return (
-      <div className={classNames('container', 'center-content','feature-split flex-container')}>
-        <h3>
-          Are certain states more suited for restaurants than other states?
-        </h3>
-        <div className='feature-split tableau'>
-          <div ref={(div) => { this.vizContainer = div }}></div>
+      <section
+        className={outerClasses}
+      >
+        <div className={classNames('container', 'center-content','feature-split flex-container')}>
+          <h3>
+            Are certain states more suited for restaurants than other states?
+          </h3>
+          <div className='feature-split tableau'>
+            <div ref={(div) => { this.vizContainer = div }}></div>
+          </div>
         </div>
-      </div>
-    )
+      </section>
+    );
   }
 }
 
@@ -56,14 +68,14 @@ class FeaturesSplit extends React.Component {
 //   ...props
 // }) => {
 
-//   const outerClasses = classNames(
-//     'features-split section',
-//     topOuterDivider && 'has-top-divider',
-//     bottomOuterDivider && 'has-bottom-divider',
-//     hasBgColor && 'has-bg-color',
-//     invertColor && 'invert-color',
-//     className
-//   );
+  // const outerClasses = classNames(
+  //   'features-split section',
+  //   topOuterDivider && 'has-top-divider',
+  //   bottomOuterDivider && 'has-bottom-divider',
+  //   hasBgColor && 'has-bg-color',
+  //   invertColor && 'invert-color',
+  //   className
+  // );
 
 //   const innerClasses = classNames(
 //     'features-split-inner section-inner',
