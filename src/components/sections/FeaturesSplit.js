@@ -1,5 +1,5 @@
 import React from 'react';
-// import classNames from 'classnames';
+import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 // import SectionHeader from './partials/SectionHeader';
 // import Image from '../elements/Image';
@@ -19,14 +19,20 @@ class FeaturesSplit extends React.Component {
   }
 
   initTableau = () => {
-    const vizUrl = "https://prod-apnortheast-a.online.tableau.com/t/xayddx/views/Storyboard2/Q2?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link"
+    options = {
+      width: "700px",
+      height: "800px"
+    }
+    const vizUrl = "https://prod-apnortheast-a.online.tableau.com/t/xayddx/views/Statemap/Q2?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link"
     const vizContainer = this.vizContainer;
     let viz = new window.tableau.Viz(vizContainer, vizUrl)
   }
 
   render() {
     return (
-      <div ref={(div) => { this.vizContainer = div }}>
+      <div className={classNames('feature-split flex-container')}>
+        <div ref={(div) => { this.vizContainer = div }}>
+        </div>
       </div>
     )
   }

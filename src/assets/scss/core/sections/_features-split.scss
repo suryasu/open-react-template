@@ -1,4 +1,8 @@
 .features-split {
+	.flex-container {
+		display: flex;
+		flex-direction: row;
+	}
 
 	.section-inner {
 		padding-top: $features-split--padding-t__mobile;
