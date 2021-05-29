@@ -35,7 +35,7 @@ class FeaturesSplit extends React.Component {
         <h3>
           Are certain states more suited for restaurants than other states?
         </h3>
-        <div ref={(div) => { this.vizContainer = div }}>
+        <div className={'center-content'} ref={(div) => { this.vizContainer = div }}>
         </div>
       </div>
     )
