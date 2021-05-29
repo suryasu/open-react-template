@@ -32,6 +32,9 @@ class FeaturesSplit extends React.Component {
   render() {
     return (
       <div className={classNames('feature-split flex-container')}>
+        <h2>
+          Are certain states more suited for restaurants than other states?
+        </h2>
         <div ref={(div) => { this.vizContainer = div }}>
         </div>
       </div>
