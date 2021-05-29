@@ -28,18 +28,8 @@ class FeaturesSplit extends React.Component {
   }
 
   render() {
-    const outerClasses = classNames(
-      'features-split section',
-      topOuterDivider && 'has-top-divider',
-      bottomOuterDivider && 'has-bottom-divider',
-      hasBgColor && 'has-bg-color',
-      invertColor && 'invert-color',
-      className
-    );
     return (
-      <section
-        className={outerClasses}
-      >
+      <section>
         <div className={classNames('container', 'center-content','feature-split flex-container')}>
           <h3>
             Are certain states more suited for restaurants than other states?
