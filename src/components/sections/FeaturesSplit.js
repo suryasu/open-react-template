@@ -20,8 +20,7 @@ class FeaturesSplit extends React.Component {
 
   initTableau = () => {
     const options = {
-      hideTabs: true,
-      height: "300px"
+      hideTabs: true
     }
     const vizUrl = "https://prod-apnortheast-a.online.tableau.com/t/xayddx/views/Statemap/Q2?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link"
     const vizContainer = this.vizContainer;
