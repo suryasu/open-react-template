@@ -19,13 +19,13 @@ class FeaturesSplit extends React.Component {
   }
 
   initTableau = () => {
-    options = {
+    let options = {
       width: "700px",
       height: "800px"
     }
     const vizUrl = "https://prod-apnortheast-a.online.tableau.com/t/xayddx/views/Statemap/Q2?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link"
     const vizContainer = this.vizContainer;
-    let viz = new window.tableau.Viz(vizContainer, vizUrl)
+    let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
   }
 
   render() {
