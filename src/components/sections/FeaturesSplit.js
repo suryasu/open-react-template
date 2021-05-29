@@ -21,8 +21,8 @@ class FeaturesSplit extends React.Component {
   initTableau = () => {
     const options = {
       hideTabs: true,
-      width: "500px",
-      height: "400px"
+      width: "700px",
+      height: "500px"
     }
     const vizUrl = "https://prod-apnortheast-a.online.tableau.com/t/xayddx/views/Statemap/Q2?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link"
     const vizContainer = this.vizContainer;
@@ -31,7 +31,7 @@ class FeaturesSplit extends React.Component {
 
   render() {
     return (
-      <div className={classNames('container', 'feature-split flex-container')}>
+      <div className={classNames('container', 'center-content','feature-split flex-container')}>
         <h2>
           Are certain states more suited for restaurants than other states?
         </h2>
