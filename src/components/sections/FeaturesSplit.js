@@ -21,8 +21,7 @@ class FeaturesSplit extends React.Component {
   initTableau = () => {
     const options = {
       hideTabs: true,
-      width: "700px",
-      height: "500px"
+      height: "300px"
     }
     const vizUrl = "https://prod-apnortheast-a.online.tableau.com/t/xayddx/views/Statemap/Q2?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link"
     const vizContainer = this.vizContainer;
@@ -35,7 +34,8 @@ class FeaturesSplit extends React.Component {
         <h3>
           Are certain states more suited for restaurants than other states?
         </h3>
-        <div className={'center-content'} ref={(div) => { this.vizContainer = div }}>
+        <div className='feature-split tableau'>
+          <div ref={(div) => { this.vizContainer = div }}></div>
         </div>
       </div>
     )
