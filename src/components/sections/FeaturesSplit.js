@@ -39,21 +39,21 @@ class FeaturesSplit extends React.Component {
 
   render() {
     return (
-      <section className={classNames('has-top-divider', "reveal-from-bottom", 'container','hero section center-content')} data-reveal-delay="400">
-        <div className={classNames('center-content','feature-split flex-container')}>
+      <section className={classNames('has-top-divider', "reveal-from-bottom", 'container')} data-reveal-delay="400">
+        <div className={classNames('center-content','flex-container')}>
           <h3>
             Are certain states more suited for restaurants than other states?
           </h3>
           <p>
             Let's take a look at the states included in Yelp's dataset.
           </p>
-          <div className={classNames('feature-split tableau', 'container-sm')}>
+          <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainer1 = div }}></div>
           </div>
-          <p className='feature-split graph-dividers'>
+          <p className='graph-dividers'>
             Now let's try to view some of the specific factors that might lead to the success and survival of a restaurant.
           </p>
-          <div className={classNames('feature-split tableau', 'container-sm')}>
+          <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainer2 = div }}></div>
           </div>
         </div>

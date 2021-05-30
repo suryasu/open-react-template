@@ -1,20 +1,4 @@
 .features-split {
-	.container {
-		padding-top: 80px;
-		padding-bottom: 80px;
-	}
-	.flex-container {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.graph-dividers {
-		margin-top: 15px;
-	}
-
-	.tableau {
-		margin: auto;
-	}
 
 	.section-inner {
 		padding-top: $features-split--padding-t__mobile;
@@ -25,6 +9,26 @@
 		padding-bottom: $features-split-header--padding__mobile;
 	}
 }
+
+.tableau-graph {
+	margin: auto;
+}
+
+.tableau-container {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.graph-dividers {
+	margin-top: 15px;
+}
+
+
 
 @include media( '>medium' ) {
 
