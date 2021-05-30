@@ -15,32 +15,53 @@ const defaultProps = {
 
 class FeaturesSplit extends React.Component {
   componentDidMount() {
-    this.initTableau1();
-    this.initTableau2();
+    this.initChoropleth();
+    this.initRatingDash();
+    this.initPriceDash();
   }
 
-  initTableau1 = () => {
+  initChoropleth = () => {
     const options = {
       hideTabs: true
     }
     const vizUrl = "https://public.tableau.com/views/foodtype6/Q2?:language=en-US&:display_count=n&:origin=viz_share_link"
-    const vizContainer = this.vizContainer1;
+    const vizContainer = this.vizContainerChoropleth;
     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
   }
 
-  initTableau2 = () => {
+  initRatingDash = () => {
     const options = {
       hideTabs: true,
     }
     const vizUrl = "https://public.tableau.com/shared/C9GCYNH9W?:display_count=n&:origin=viz_share_link"
-    const vizContainer = this.vizContainer2;
+    const vizContainer = this.vizContainerRating;
     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
+  }
+
+  initPriceDash = () => {
+    const options = {
+      hideTabs: true,
+    }
+    const vizUrl = "https://public.tableau.com/views/foodtype6/D4?:language=en-US&:display_count=n&:origin=viz_share_link"
+    const vizContainer = this.vizContainerPrice;
+    let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
+  }
+
+  initLollipop = () => {
+    const options = {
+      hideTabs: true,
+    }
+    const vizUrl = "https://public.tableau.com/views/foodtype6/Q2-1?:language=en-US&:display_count=n&:origin=viz_share_link"
+    const vizContainer = this.vizContainerLollipop;
+    let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
+    
   }
 
   render() {
     return (
       <section className={classNames('container')} data-reveal-delay="400">
         <div className={classNames('has-top-divider', "reveal-from-bottom",'center-content','flex-container')}>
+          
           <h3>
             Are certain states more suited for restaurants than other states?
           </h3>
@@ -48,13 +69,34 @@ class FeaturesSplit extends React.Component {
             Let's take a look at the states included in Yelp's dataset.
           </p>
           <div className={classNames('tableau-graph', 'container-sm')}>
-            <div ref={(div) => { this.vizContainer1 = div }}></div>
+            <div ref={(div) => { this.vizContainerChoropleth = div }}></div>
           </div>
           <p className='graph-dividers'>
-            Now let's try to view some of the specific factors that might lead to the success and survival of a restaurant.
+            Now let's do a deep dive into some of the metropolitan areas. 
           </p>
           <div className={classNames('tableau-graph', 'container-sm')}>
-            <div ref={(div) => { this.vizContainer2 = div }}></div>
+            <div ref={(div) => { this.vizContainerLollipop = div }}></div>
+          </div>
+
+          <h3>
+            Do review count and star rating influence restaurant survival?
+          </h3>         
+          <div className={classNames('tableau-graph', 'container-sm')}>
+            <div ref={(div) => { this.vizContainerRating = div }}></div>
+          </div>
+
+          <h3>
+            Is there a certain type of price point that is more likely to survive?
+          </h3>
+          <div className={classNames('tableau-graph', 'container-sm')}>
+            <div ref={(div) => { this.vizContainerPrice = div }}></div>
+          </div>
+
+          <h3>
+            Does review engagement help a restaurant's review and ratings?
+          </h3>
+          <div className={classNames('tableau-graph', 'container-sm')}>
+            <div ref={(div) => { this.vizContainerPrice = div }}></div>
           </div>
         </div>
       </section>
