@@ -39,7 +39,7 @@ class FeaturesSplit extends React.Component {
 
   render() {
     return (
-      <section className={classNames('has-top-divider', "reveal-from-bottom", 'container')} data-reveal-delay="400">
+      <section className={classNames('has-top-divider', "reveal-from-bottom", 'container','hero section center-content')} data-reveal-delay="400">
         <div className={classNames('center-content','feature-split flex-container')}>
           <h3>
             Are certain states more suited for restaurants than other states?
