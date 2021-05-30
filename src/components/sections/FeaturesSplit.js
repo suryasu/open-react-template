@@ -47,7 +47,7 @@ class FeaturesSplit extends React.Component {
           <p>
             Let's take a look at the states included in Yelp's dataset.
           </p>
-          <div className={classNames=('feature-split tableau', 'content-sm')}>
+          <div className={classNames('feature-split tableau', 'content-sm')}>
             <div ref={(div) => { this.vizContainer1 = div }}></div>
           </div>
           <p>
