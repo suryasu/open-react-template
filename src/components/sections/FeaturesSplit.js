@@ -30,7 +30,7 @@ class FeaturesSplit extends React.Component {
 
   initTableau2 = () => {
     const options = {
-      hideTabs: true
+      hideTabs: true,
     }
     const vizUrl = "https://public.tableau.com/shared/C9GCYNH9W?:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainer2;
@@ -53,7 +53,7 @@ class FeaturesSplit extends React.Component {
           <p>
             Now let's try to view some of the specific factors that might lead to the success and survival of a restaurant.
           </p>
-          <div className='feature-split tableau'>
+          <div className={classNames('feature-split tableau', 'container-sm')}>
             <div ref={(div) => { this.vizContainer2 = div }}></div>
           </div>
         </div>
