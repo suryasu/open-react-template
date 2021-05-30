@@ -20,6 +20,7 @@ class FeaturesSplit extends React.Component {
     this.initPriceDash();
     this.initLollipop();
     this.initEngagementDash();
+    this.initParallelCoord();
   }
 
   initChoropleth = () => {
@@ -59,6 +60,16 @@ class FeaturesSplit extends React.Component {
     
   }
 
+  initParallelCoord = () => {
+    const options = {
+      hideTabs: true,
+    }
+    const vizUrl = "https://public.tableau.com/views/foodtype6/Q1-2?:language=en-US&:display_count=n&:origin=viz_share_link"
+    const vizContainer = this.vizContainerParallel;
+    let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
+    
+  }
+
 
   initEngagementDash = () => {
     const options = {
@@ -73,7 +84,7 @@ class FeaturesSplit extends React.Component {
   render() {
     return (
       <section className={classNames('container')} data-reveal-delay="400">
-        <div className={classNames("reveal-from-bottom",'center-content','flex-container')}>
+        <div className={classNames("reveal-from-bottom",'center-content','flex-container', 'has-top-divider')}>
           
           <h3 classNames={classNames('has-top-divider')}>
             Are certain states more suited for restaurants than other states?
@@ -115,10 +126,19 @@ class FeaturesSplit extends React.Component {
             Does review engagement help a restaurant's review and ratings?
           </h3>
           <p>
-            Users can engage with a Yelp review by rating it as "funny," "cool," or "useful." Let us dive into the engagement rates of different restaurants to see whether they affect survival
+            Users can engage with a Yelp review by rating it as "funny," "cool," or "useful." Let us dive into the engagement rates of restaurants in different metropolitan areas to see whether they affect survival
           </p>   
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerEngagement = div }}></div>
+          </div>
+          <h3 classNames={classNames('has-top-divider')}>
+            Finally, let's put it all together
+          </h3>
+          <p>
+            All the variables in this visualization are normalized. You can choose a metropolitan area to view how it fares in terms of stars, review count, engagement (aggregate of cool, funny, useful reactions to reviews), aggregate of cool reviews, aggregate of funny reviews, and aggregate of useful reviews when compared to other areas included inthe visualization. 
+          </p>   
+          <div className={classNames('tableau-graph', 'container-sm')}>
+            <div ref={(div) => { this.vizContainerParallel = div }}></div>
           </div>
         </div>
       </section>
