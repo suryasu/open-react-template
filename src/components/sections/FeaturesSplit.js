@@ -18,6 +18,8 @@ class FeaturesSplit extends React.Component {
     this.initChoropleth();
     this.initRatingDash();
     this.initPriceDash();
+    this.initLollipop();
+    this.initEngagementDash();
   }
 
   initChoropleth = () => {
@@ -57,12 +59,23 @@ class FeaturesSplit extends React.Component {
     
   }
 
+
+  initEngagementDash = () => {
+    const options = {
+      hideTabs: true,
+    }
+    const vizUrl = "https://public.tableau.com/views/foodtype6/D5?:language=en-US&:display_count=n&:origin=viz_share_link"
+    const vizContainer = this.vizContainerEngagement;
+    let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
+    
+  }
+
   render() {
     return (
       <section className={classNames('container')} data-reveal-delay="400">
-        <div className={classNames('has-top-divider', "reveal-from-bottom",'center-content','flex-container')}>
+        <div className={classNames("reveal-from-bottom",'center-content','flex-container')}>
           
-          <h3>
+          <h3 classNames={classNames('has-top-divider')}>
             Are certain states more suited for restaurants than other states?
           </h3>
           <p>
@@ -78,25 +91,31 @@ class FeaturesSplit extends React.Component {
             <div ref={(div) => { this.vizContainerLollipop = div }}></div>
           </div>
 
-          <h3>
+          <h3 classNames={classNames('has-top-divider')}>
             Do review count and star rating influence restaurant survival?
-          </h3>         
+          </h3>
+          <p>
+            Let's look at the relationship between review count, star rating, restaurant
+          </p>         
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerRating = div }}></div>
           </div>
 
-          <h3>
+          <h3 classNames={classNames('has-top-divider')}>
             Is there a certain type of price point that is more likely to survive?
           </h3>
+          <p>
+            Let's take a look at the different price categories offered by Yelp
+          </p>   
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerPrice = div }}></div>
           </div>
 
-          <h3>
+          <h3 classNames={classNames('has-top-divider')}>
             Does review engagement help a restaurant's review and ratings?
           </h3>
           <div className={classNames('tableau-graph', 'container-sm')}>
-            <div ref={(div) => { this.vizContainerPrice = div }}></div>
+            <div ref={(div) => { this.vizContainerEngagement = div }}></div>
           </div>
         </div>
       </section>
