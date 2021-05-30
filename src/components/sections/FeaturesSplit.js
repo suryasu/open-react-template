@@ -29,11 +29,14 @@ class FeaturesSplit extends React.Component {
 
   render() {
     return (
-      <section>
+      <section className={classNames('has-bottom-divider', "reveal-from-bottom")} data-reveal-delay="400">
         <div className={classNames('container', 'center-content','feature-split flex-container')}>
           <h3>
             Are certain states more suited for restaurants than other states?
           </h3>
+          <p>
+            Let's take a look at the states included in Yelp's dataset
+          </p>
           <div className='feature-split tableau'>
             <div ref={(div) => { this.vizContainer = div }}></div>
           </div>
