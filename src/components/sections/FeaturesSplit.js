@@ -47,10 +47,10 @@ class FeaturesSplit extends React.Component {
           <p>
             Let's take a look at the states included in Yelp's dataset.
           </p>
-          <div className={classNames('feature-split tableau', 'content-sm')}>
+          <div className={classNames('feature-split tableau', 'container-sm')}>
             <div ref={(div) => { this.vizContainer1 = div }}></div>
           </div>
-          <p>
+          <p className='feature-split graph-dividers'>
             Now let's try to view some of the specific factors that might lead to the success and survival of a restaurant.
           </p>
           <div className={classNames('feature-split tableau', 'container-sm')}>
