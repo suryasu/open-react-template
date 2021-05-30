@@ -114,6 +114,9 @@ class FeaturesSplit extends React.Component {
           <h3 classNames={classNames('has-top-divider')}>
             Does review engagement help a restaurant's review and ratings?
           </h3>
+          <p>
+            Users can engage with a Yelp review by rating it as "funny," "cool," or "useful." Let us dive into the engagement rates of different restaurants to see whether they affect survival
+          </p>   
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerEngagement = div }}></div>
           </div>
