@@ -15,15 +15,25 @@ const defaultProps = {
 
 class FeaturesSplit extends React.Component {
   componentDidMount() {
-    this.initTableau();
+    this.initTableau1();
+    this.initTableau2();
   }
 
-  initTableau = () => {
+  initTableau1 = () => {
     const options = {
       hideTabs: true
     }
-    const vizUrl = "https://prod-apnortheast-a.online.tableau.com/t/xayddx/views/Statemap/Q2?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link"
-    const vizContainer = this.vizContainer;
+    const vizUrl = "https://public.tableau.com/views/foodtype6/Q2?:language=en-US&:display_count=n&:origin=viz_share_link"
+    const vizContainer = this.vizContainer1;
+    let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
+  }
+
+  initTableau2 = () => {
+    const options = {
+      hideTabs: true
+    }
+    const vizUrl = "https://public.tableau.com/shared/C9GCYNH9W?:display_count=n&:origin=viz_share_link"
+    const vizContainer = this.vizContainer2;
     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
   }
 
@@ -35,10 +45,16 @@ class FeaturesSplit extends React.Component {
             Are certain states more suited for restaurants than other states?
           </h3>
           <p>
-            Let's take a look at the states included in Yelp's dataset
+            Let's take a look at the states included in Yelp's dataset.
           </p>
           <div className='feature-split tableau'>
-            <div ref={(div) => { this.vizContainer = div }}></div>
+            <div ref={(div) => { this.vizContainer1 = div }}></div>
+          </div>
+          <p>
+            Now let's try to view some of the specific factors that might lead to the success and survival of a restaurant.
+          </p>
+          <div className='feature-split tableau'>
+            <div ref={(div) => { this.vizContainer2 = div }}></div>
           </div>
         </div>
       </section>
