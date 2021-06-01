@@ -27,7 +27,7 @@ class FeaturesSplit extends React.Component {
     const options = {
       hideTabs: true
     }
-    const vizUrl = "https://public.tableau.com/views/foodtype6/Q2?:language=en-US&:display_count=n&:origin=viz_share_link"
+    const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D22?:language=en-US&:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainerChoropleth;
     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
   }
@@ -36,7 +36,7 @@ class FeaturesSplit extends React.Component {
     const options = {
       hideTabs: true,
     }
-    const vizUrl = "https://public.tableau.com/shared/C9GCYNH9W?:display_count=n&:origin=viz_share_link"
+    const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D3?:language=en-US&:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainerRating;
     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
   }
@@ -45,7 +45,7 @@ class FeaturesSplit extends React.Component {
     const options = {
       hideTabs: true,
     }
-    const vizUrl = "https://public.tableau.com/views/foodtype6/D4?:language=en-US&:display_count=n&:origin=viz_share_link"
+    const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D5?:language=en-US&:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainerPrice;
     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
   }
@@ -54,7 +54,7 @@ class FeaturesSplit extends React.Component {
     const options = {
       hideTabs: true,
     }
-    const vizUrl = "https://public.tableau.com/views/foodtype6/Q2-1?:language=en-US&:display_count=n&:origin=viz_share_link"
+    const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D23?:language=en-US&:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainerLollipop;
     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
     
@@ -64,19 +64,30 @@ class FeaturesSplit extends React.Component {
     const options = {
       hideTabs: true,
     }
-    const vizUrl = "https://public.tableau.com/views/foodtype6/Q1-2?:language=en-US&:display_count=n&:origin=viz_share_link"
+    const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D1?:language=en-US&:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainerParallel;
     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
     
   }
+  
 
 
   initEngagementDash = () => {
     const options = {
       hideTabs: true,
     }
-    const vizUrl = "https://public.tableau.com/views/foodtype6/D5?:language=en-US&:display_count=n&:origin=viz_share_link"
+    const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D5?:language=en-US&:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainerEngagement;
+    let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
+    
+  }
+
+  initScatterPlot = () => {
+    const options = {
+      hideTabs: true,
+    }
+    const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D5?:language=en-US&:display_count=n&:origin=viz_share_link"
+    const vizContainer = this.vizContainerScatterPlot;
     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
     
   }
@@ -103,13 +114,23 @@ class FeaturesSplit extends React.Component {
           </div>
 
           <h3 classNames={classNames('has-top-divider')}>
-            Do review count and star rating influence restaurant survival?
+            Do review count and star rating influence restaurant survival and success?
           </h3>
           <p>
             Let's look at the relationship between review count, star rating, restaurant
           </p>         
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerRating = div }}></div>
+          </div>
+
+          <h3 classNames={classNames('has-top-divider')}>
+            Does restaurant category affect restaurant survival and success?
+          </h3>
+          <p>
+            Let's take a look at the relationship between at the most popular categories offered by Yelp
+          </p>   
+          <div className={classNames('tableau-graph', 'container-sm')}>
+            <div ref={(div) => { this.vizContainerScatterPlot = div }}></div>
           </div>
 
           <h3 classNames={classNames('has-top-divider')}>
@@ -131,6 +152,7 @@ class FeaturesSplit extends React.Component {
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerEngagement = div }}></div>
           </div>
+
           <h3 classNames={classNames('has-top-divider')}>
             Finally, let's put it all together
           </h3>

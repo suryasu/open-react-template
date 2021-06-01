@@ -33,7 +33,7 @@ const SectionHeader = ({
 
   return (
     <>
-      {(data.title || data.paragraph) &&
+      {(data.title || data.paragraph1 || data.paragraph2) &&
         <div
           {...props}
           className={classes}
@@ -47,7 +47,10 @@ const SectionHeader = ({
                   data.paragraph ? 'mb-16' : 'mb-0'
                 )}>{data.title}</Component>
             }
-            {data.paragraph &&
+            {data.paragraph1 &&
+              <p className="m-0">{data.paragraph}</p>
+            }
+            {data.paragraph2 &&
               <p className="m-0">{data.paragraph}</p>
             }
           </div>
