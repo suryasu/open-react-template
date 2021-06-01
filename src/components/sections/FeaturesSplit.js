@@ -38,8 +38,8 @@ class FeaturesSplit extends React.Component {
   initRatingDash = () => {
     const options = {
       hideTabs: true,
-      width: "1000",
-      height: "700"
+      width: "1000px",
+      height: "700px"
     }
     const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D3?:language=en-US&:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainerRating;
@@ -49,8 +49,8 @@ class FeaturesSplit extends React.Component {
   initPriceDash = () => {
     const options = {
       hideTabs: true,
-      width: "1000",
-      height: "700"
+      width: "1000px",
+      height: "700px"
     }
     const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D5?:language=en-US&:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainerPrice;
@@ -60,8 +60,8 @@ class FeaturesSplit extends React.Component {
   initLollipop = () => {
     const options = {
       hideTabs: true,
-      width: "1000",
-      height: "700"
+      width: "1000px",
+      height: "700px"
     }
     const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D23?:language=en-US&:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainerLollipop;
@@ -72,8 +72,8 @@ class FeaturesSplit extends React.Component {
   initParallelCoord = () => {
     const options = {
       hideTabs: true,
-      width: "1000",
-      height: "700"
+      width: "1000px",
+      height: "700px"
     }
     const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D1?:language=en-US&:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainerParallel;
@@ -84,8 +84,8 @@ class FeaturesSplit extends React.Component {
   initEngagementDash = () => {
     const options = {
       hideTabs: true,
-      width: "1000",
-      height: "700"
+      width: "1000px",
+      height: "700px"
     }
     const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D5?:language=en-US&:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainerEngagement;
@@ -96,8 +96,8 @@ class FeaturesSplit extends React.Component {
   initScatterPlot = () => {
     const options = {
       hideTabs: true,
-      width: "1000",
-      height: "700"
+      width: "1000px",
+      height: "800px"
     }
     const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D6?:language=en-US&:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainerScatterPlot;
