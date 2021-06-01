@@ -32,7 +32,7 @@ class FeaturesSplit extends React.Component {
       // width: "1000px",
       // height: "700px"
     }
-    const vizUrl = "https://public.tableau.com/shared/7WQ68B8Y5?:display_count=n&:origin=viz_share_link"
+    const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/Q2?:language=en-US&:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainerChoropleth;
     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
   }
