@@ -21,6 +21,7 @@ class FeaturesSplit extends React.Component {
     this.initLollipop();
     this.initEngagementDash();
     this.initParallelCoord();
+    this.initScatterPlot()
   }
 
   initChoropleth = () => {
@@ -79,8 +80,6 @@ class FeaturesSplit extends React.Component {
     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
     
   }
-  
-
 
   initEngagementDash = () => {
     const options = {
@@ -100,7 +99,7 @@ class FeaturesSplit extends React.Component {
       width: "1000",
       height: "700"
     }
-    const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D5?:language=en-US&:display_count=n&:origin=viz_share_link"
+    const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D6?:language=en-US&:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainerScatterPlot;
     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
     
