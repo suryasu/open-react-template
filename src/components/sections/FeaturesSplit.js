@@ -27,8 +27,8 @@ class FeaturesSplit extends React.Component {
   initChoropleth = () => {
     const options = {
       hideTabs: true,
-      width: "1000",
-      height: "700"
+      width: "1000px",
+      height: "700px"
     }
     const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D22?:language=en-US&:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainerChoropleth;
