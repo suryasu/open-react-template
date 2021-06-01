@@ -32,7 +32,7 @@ class FeaturesSplit extends React.Component {
       // width: "1000px",
       // height: "700px"
     }
-    const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D22?:language=en-US&:display_count=n&:origin=viz_share_link"
+    const vizUrl = "https://public.tableau.com/shared/7WQ68B8Y5?:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainerChoropleth;
     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
   }
@@ -54,7 +54,7 @@ class FeaturesSplit extends React.Component {
       // width: "1000px",
       // height: "700px"
     }
-    const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D5?:language=en-US&:display_count=n&:origin=viz_share_link"
+    const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D4?:language=en-US&:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainerPrice;
     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
   }
@@ -77,7 +77,7 @@ class FeaturesSplit extends React.Component {
     //   width: "1000px",
     //   height: "700px"
      }
-    const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D1?:language=en-US&:display_count=n&:origin=viz_share_link"
+    const vizUrl = "https://public.tableau.com/shared/49YP9HFCH?:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainerParallel;
     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
     
