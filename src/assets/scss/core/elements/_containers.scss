@@ -5,6 +5,7 @@
 	margin: 0 auto;
 	padding-left: $container--padding__mobile;
 	padding-right: $container--padding__mobile;
+	max-height: 8046px;
 
 	@include media( '>small' ) {
 		padding-left: $container--padding__desktop;

@@ -56,12 +56,6 @@ const FeaturesTiles = ({
       <div className="container">
         <div className={innerClasses}>
           <h3 className="center-content">
-            Yelp's Dataset
-          </h3>
-          <p className={classNames("m-0", "paragraphIntro")}>
-            Yelp's academic dataset is a subset of business data, which covers 8 metropolitan cities. 
-          </p>
-          <h3 className="center-content">
             Variables used to identify success 
           </h3>
           <div className={tilesClasses}>
