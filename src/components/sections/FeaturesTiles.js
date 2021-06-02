@@ -55,7 +55,6 @@ const FeaturesTiles = ({
     >
       <div className="container">
         <div className={innerClasses}>
-          <SectionHeader data={} className="center-content" />
           <h3>
             Variables used to identify success 
           </h3>
