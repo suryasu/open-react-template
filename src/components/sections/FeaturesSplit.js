@@ -170,7 +170,7 @@ class FeaturesSplit extends React.Component {
             Finally, let's put it all together
           </h3>
           <p>
-            All the variables in this visualization are normalized. You can choose a metropolitan area to view how it fares in terms of stars, review count, engagement (aggregate of cool, funny, useful reactions to reviews), aggregate of cool reviews, aggregate of funny reviews, and aggregate of useful reviews when compared to other areas included inthe visualization. 
+            In this Parallel Coordinates plot, we use five variables--stars, engagement, review count, useful, funny, and cool--to identify the relationships between them. Each variable is given its own axis and all the axes are placed parallel to each other. Since each variable works off a different unit of measurement, all of the axes are normalized from a scale of 0 to 1 to keep all the scales uniform. Values are plotted as a series of lines that connect across all the axes.
           </p>   
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerParallel = div }}></div>
