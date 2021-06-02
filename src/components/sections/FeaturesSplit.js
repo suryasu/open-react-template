@@ -18,7 +18,7 @@ class FeaturesSplit extends React.Component {
     this.initChoropleth();
     this.initRatingDash();
     this.initPriceDash();
-    this.initLollipop();
+    // this.initLollipop();
     this.initEngagementDash();
     this.initParallelCoord();
     this.initScatterPlot()
@@ -57,17 +57,17 @@ class FeaturesSplit extends React.Component {
     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
   }
 
-  initLollipop = () => {
-    const options = {
-      hideTabs: true,
-      // width: "1000px",
-      // height: "700px"
-    }
-    const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D23?:language=en-US&:display_count=n&:origin=viz_share_link"
-    const vizContainer = this.vizContainerLollipop;
-    let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
+  // initLollipop = () => {
+  //   const options = {
+  //     hideTabs: true,
+  //     // width: "1000px",
+  //     // height: "700px"
+  //   }
+  //   const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D23?:language=en-US&:display_count=n&:origin=viz_share_link"
+  //   const vizContainer = this.vizContainerLollipop;
+  //   let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
     
-  }
+  // }
 
   initParallelCoord = () => {
     const options = {
