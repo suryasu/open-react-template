@@ -30,7 +30,7 @@ class FeaturesSplit extends React.Component {
       // width: "1000px",
       // height: "700px"
     }
-    const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/Q2?:language=en-US&:display_count=n&:origin=viz_share_link"
+    const vizUrl = "https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D2?:language=en-US&:display_count=n&:origin=viz_share_link"
     const vizContainer = this.vizContainerChoropleth;
     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
   }
@@ -114,17 +114,17 @@ class FeaturesSplit extends React.Component {
             Are certain states more suited for restaurants than other states?
           </h3>
           <p>
-            Let's take a look at the states included in Yelp's dataset.
+            Let's take a look at the states included in Yelp's dataset and dive deeper into some of the major metropolitan areas.
           </p>
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerChoropleth = div }}></div>
           </div>
-          <p className='graph-dividers'>
+          {/* <p className='graph-dividers'>
             Now let's do a deep dive into some of the metropolitan areas. 
           </p>
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerLollipop = div }}></div>
-          </div>
+          </div> */}
 
           <h3 classNames={classNames('has-top-divider')}>
             Do review count and star rating influence restaurant survival and success?
