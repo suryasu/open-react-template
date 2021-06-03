@@ -176,8 +176,8 @@ class FeaturesSplit extends React.Component {
             <div ref={(div) => { this.vizContainerParallel = div }}></div>
           </div>
         </div>
-        <div className="footer-copyright">[1]https://fortune.com/2021/01/26/restaurants-bars-closed-2020-jobs-lost-how-many-have-closed-us-covid-pandemic-stimulus-unemployment/</div>
-        <div className="footer-copyright">[2]https://datavizcatalogue.com/methods/parallel_coordinates.html</div>
+        <div className="citations">[1]https://fortune.com/2021/01/26/restaurants-bars-closed-2020-jobs-lost-how-many-have-closed-us-covid-pandemic-stimulus-unemployment/</div>
+        <div className="citations">[2]https://datavizcatalogue.com/methods/parallel_coordinates.html</div>
       </section>
     );
   }
