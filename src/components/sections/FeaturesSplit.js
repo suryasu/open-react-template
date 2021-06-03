@@ -111,10 +111,10 @@ class FeaturesSplit extends React.Component {
         <div className={classNames("reveal-from-bottom",'center-content','flex-container', 'has-top-divider')}>
           
           <h3 classNames={classNames('has-top-divider')}>
-            Are certain states more suited for restaurants than other states?
+            Are certain geographical areas more suited for restaurants than other areas?
           </h3>
           <p>
-            Let's take a look at the states included in Yelp's dataset and dive deeper into some of the major metropolitan areas.
+            Let's take a look at the states included in Yelp's dataset and dive deeper into the largest cities covered in the dataset.
           </p>
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerChoropleth = div }}></div>
@@ -130,7 +130,7 @@ class FeaturesSplit extends React.Component {
             Do review count and star rating influence restaurant survival and success?
           </h3>
           <p>
-            Let's look at the relationship between review count, star rating, restaurant
+            Let's look at the relationship between review count, star rating, and percentage of open restaurants
           </p>         
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerRating = div }}></div>
@@ -140,17 +140,17 @@ class FeaturesSplit extends React.Component {
             Does restaurant category affect restaurant survival and success?
           </h3>
           <p>
-            Let's take a look at the relationship between at the most popular categories offered by Yelp
+            Let's take a look at the relationship between the most popular categories offered by Yelp, percentage of open restaurants and review count
           </p>   
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerScatterPlot = div }}></div>
           </div>
 
           <h3 classNames={classNames('has-top-divider')}>
-            Is there a certain type of price point that is more likely to survive?
+            Are restaurants at certain price points more likely to survive?
           </h3>
           <p>
-            Let's take a look at the different price categories offered by Yelp
+            Let's take a look at the different price categories offered by Yelp as compared to the review count and number of open restaurants
           </p>   
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerPrice = div }}></div>
@@ -170,7 +170,7 @@ class FeaturesSplit extends React.Component {
             Finally, let's put it all together
           </h3>
           <p>
-            In this Parallel Coordinates plot, we use five variables--stars, engagement, review count, useful, funny, and cool--to identify the relationships between them. Each variable is given its own axis and all the axes are placed parallel to each other. Since each variable works off a different unit of measurement, all of the axes are normalized from a scale of 0 to 1 to keep all the scales uniform. Values are plotted as a series of lines that connect across all the axes.
+            In this Parallel Coordinates plot, we use five variables--stars, engagement, review count, useful, funny, and cool--to identify the relationships between them. Each variable is given its own axis and all the axes are placed parallel to each other. Since each variable works off a different unit of measurement, all of the axes are normalized from a scale of 0 to 1 to keep all the scales uniform. Values are plotted as a series of lines that connect across all the axes[2]
           </p>   
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerParallel = div }}></div>
