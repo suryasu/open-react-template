@@ -45,8 +45,6 @@ const Footer = ({
           </div> */}
           <div className="footer-bottom space-between text-xxs invert-order-desktop">
             {/* <FooterNav /> */}
-            <div className="footer-copyright">[1]https://fortune.com/2021/01/26/restaurants-bars-closed-2020-jobs-lost-how-many-have-closed-us-covid-pandemic-stimulus-unemployment/</div>
-            <div className="footer-copyright">[2]https://datavizcatalogue.com/methods/parallel_coordinates.html</div>
             <div className="footer-copyright">Made by Eggstra Salty using React and Tableau</div>
             <div className="footer-copyright">Special Thanks to <a href="https://cruip.com">Cruip</a> for the open-source template</div>
             {/* <div className="footer-copyright">Made by <a href="https://cruip.com">Cruip</a>. All right reserved</div> */}
