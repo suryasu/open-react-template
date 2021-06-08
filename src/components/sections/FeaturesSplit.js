@@ -88,7 +88,7 @@ class FeaturesSplit extends React.Component {
             Are certain geographical areas more suited for restaurants than other areas?
           </h3>
           <p>
-            Let's take a look at the states included in Yelp's dataset and dive deeper into the largest cities covered in the dataset.
+            Let's take a look at the states included in Yelp's dataset and dive deeper into the largest cities covered in the dataset. Hover over any state or city data point for additional details.
           </p>
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerChoropleth = div }}></div>
@@ -98,7 +98,7 @@ class FeaturesSplit extends React.Component {
             Do review count and star rating influence restaurant survival and success?
           </h3>
           <p>
-            Let's look at the relationship between review count, star rating, and percentage of open restaurants
+            Let's look at the relationship between review count, star rating, and percentage of open restaurants. Hover over any data point for additional details.
           </p>         
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerRating = div }}></div>
@@ -108,7 +108,7 @@ class FeaturesSplit extends React.Component {
             Does restaurant category affect restaurant survival and success?
           </h3>
           <p>
-            Let's take a look at the relationship between the most popular categories offered by Yelp, percentage of open restaurants and review count
+            Let's take a look at the relationship between the most popular categories offered by Yelp, percentage of open restaurants and review count. Hover over any dot for additional details.
           </p>   
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerScatterPlot = div }}></div>
@@ -118,7 +118,7 @@ class FeaturesSplit extends React.Component {
             Are restaurants at certain price points more likely to survive?
           </h3>
           <p>
-            Let's take a look at the different price categories offered by Yelp as compared to the review count and number of open restaurants
+            Let's take a look at the different price categories offered by Yelp as compared to the review count and number of open restaurants. Hover over any bar for additional details.
           </p>   
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerPrice = div }}></div>
@@ -128,7 +128,7 @@ class FeaturesSplit extends React.Component {
             Does review engagement help a restaurant's review and ratings?
           </h3>
           <p>
-            Users can engage with a Yelp review by rating it as "funny," "cool," or "useful." Let us dive into the engagement rates of restaurants in different metropolitan areas to see whether they affect survival
+            Users can engage with a Yelp review by rating it as "funny," "cool," or "useful." Let us dive into the engagement rates of restaurants in different metropolitan areas to see whether they affect survival. Hover over any data point for additional details.
           </p>   
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerEngagement = div }}></div>
@@ -138,7 +138,7 @@ class FeaturesSplit extends React.Component {
             Finally, let's put it all together
           </h3>
           <p>
-            In this Parallel Coordinates plot, we use five variables--stars, engagement, review count, useful, funny, and cool--to identify the relationships between them. Each variable is given its own axis and all the axes are placed parallel to each other. Since each variable works off a different unit of measurement, all of the axes are normalized from a scale of 0 to 1 to keep all the scales uniform. Values are plotted as a series of lines that connect across all the axes[2]
+            In this Parallel Coordinates plot, we use five variables--stars, engagement, review count, useful, funny, and cool--to identify the relationships between them. Each variable is given its own axis and all the axes are placed parallel to each other. Since each variable works off a different unit of measurement, all of the axes are normalized from a scale of 0 to 1 to keep all the scales uniform. Values are plotted as a series of lines that connect across all the axes[2]. Hover over any line for additional details.
           </p>   
           <div className={classNames('tableau-graph', 'container-sm')}>
             <div ref={(div) => { this.vizContainerParallel = div }}></div>
